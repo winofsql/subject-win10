@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Google\Chrome]
+"ShowHomeButton"=dword:00000001
+"PasswordManagerEnabled"=dword:00000000
+"AutofillCreditCardEnabled"=dword:00000000
+"AutofillAddressEnabled"=dword:00000000
+

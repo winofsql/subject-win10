@@ -1,0 +1,19 @@
+### スクロールの一時停止
+
+- マウスの左クリック( 再開は 右クリック )
+- 例) dir を一時停止
+  - スペースキーで１ページづつ
+  - ENTER キーで１行づつ
+  - **CTRL + C で強制終了**
+```
+dir c:\windows\system32 | more
+```
+![image](https://user-images.githubusercontent.com/1501327/153743100-78a030a9-93fd-46c7-8297-999d3c7c9fc8.png)
+
+### 入力コマンドの履歴
+
+- 上矢印キーで以前のコマンド
+- 下矢印キーで次のコマンド
+- F7 で履歴一覧ダイアログより選択
+
+![image](https://user-images.githubusercontent.com/1501327/153743506-ae7704a7-820b-4ee3-8f08-f33cf68a6731.png)

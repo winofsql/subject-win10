@@ -1,0 +1,1 @@
+powershell -NoProfile -ExecutionPolicy unrestricted -WindowStyle hidden -Command "start stop.bat -verb runas"

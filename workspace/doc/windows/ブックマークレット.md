@@ -1,0 +1,35 @@
+# js-bookmarklet 2022-04-07 時点
+
+## [ロリポップログイン](https://user.lolipop.jp/)
+```
+javascript:$("input[name='account']").val("アカウント");$('#domain-id').val(ドメイン番号);$("input[name='passwd']").val("パスワード");jf_Login();void(0);
+```
+
+![image](https://user-images.githubusercontent.com/1501327/162091644-d7cd4a44-481b-45a6-83c9-537364657bef.png)
+
+
+## Google パスワード入力部分
+```
+javascript:document.getElementsByTagName("input")[3].value="パスワード";document.getElementsByTagName("button")[1].click();void(0);
+```
+
+## 選択した英語を Google 翻訳する
+```
+javascript:(function(){var b=((window.getSelection&&window.getSelection())||(document.getSelection&&document.getSelection())||(document.selection&&document.selection.createRange&&document.selection.createRange().text));if(b!=''){window.open('https://translate.google.co.jp/?hl=ja&tab=wT#en/ja/'+encodeURIComponent(b));}else{window.open('https://translate.google.co.jp/translate?sl=en&tl=ja&js=n&prev=_t&hl=ja&ie=UTF-8&u='+encodeURIComponent(location.href)+'&act=url');}})();
+```
+
+## 選択した日本語文字列を Google 翻訳する
+```
+javascript:(function(){var b=((window.getSelection&&window.getSelection())||(document.getSelection&&document.getSelection())||(document.selection&&document.selection.createRange&&document.selection.createRange().text));if(b!=''){window.open('https://translate.google.co.jp/?hl=ja&tab=wT#ja/en/'+encodeURIComponent(b));}else{window.open('https://translate.google.co.jp/translate?sl=ja&tl=en&js=n&prev=_t&hl=ja&ie=UTF-8&u='+encodeURIComponent(location.href)+'&act=url');}})();
+```
+
+## Yahoo! 番組( 当日 )
+```
+javascript:var d=new Date();d=(new Date(d.getFullYear(),d.getMonth(),d.getDate(),00,00).getTime())/1000;window.location='https://tv.yahoo.co.jp/listings?a=40&d=%27+d;void(0);
+```
+
+
+## ドメイン内検索
+```
+javascript:var wnd=document.createElement('iframe');wnd.setAttribute('id','if');wnd.frameBorder=0;document.body.appendChild(wnd);wnd.contentWindow.document.write('<script src=\'https://winofsql.jp/gds2.js\' charset=\'shift_jis\'></script>')
+```

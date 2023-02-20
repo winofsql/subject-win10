@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+
+    // ウインドウの位置とサイズ
+    top.moveTo( 30, 30 );
+    top.resizeTo( 700, 800 );
+
+$(function(){
+    $("#lboxtable td").each(function(){
+        if( $(this).get(0).cellIndex == 0 ) {
+
+            $(this).css({ "cursor" : "pointer" });
+
+        }
+    });
+
+    $("#lboxtable td").on("click",function(){
+        if( $(this).get(0).cellIndex == 0 ) {
+
+            var text = $(this).text();
+            shellRunExe( text, "" );
+
+        }
+    });
+});
+
+function newObject( className ) {
+
+    var obj;
+
+    try {
+        obj = new ActiveXObject( className );
+    }
+    catch (e) {
+        obj = null;
+    }
+
+    return obj;
+
+}
+
+var shell = newObject("Shell.Application");
+
+function shellRunExe( strPath, strParam ) {
+
+    shell.ShellExecute( strPath, strParam )
+
+}
+
+</script>
+</head>
+<body>
+
+<style type="text/css">
+.it {
+    background-color: pink;
+}
+
+#lboxtable * {
+    font-family: メイリオ,'ＭＳ Ｐゴシック';
+    font-size: 12px;
+}
+#lboxtable table {
+    border-collapse: collapse;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px;
+    background-color: #FFFFFF;
+}
+#lboxtable td {
+    padding: 5px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px;
+    /* white-space: nowrap; */
+}
+#lboxtable th {
+    padding: 5px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px;
+    background-color: silver;
+    /* white-space: nowrap; */
+}
+#lboxtable .header {
+    padding: 5px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px;
+    background-color: silver;
+    /* white-space: nowrap; */
+}
+</style>
+
+<DIV id="lboxtable">
+<table>
+    <tbody>
+        <tr>
+            <td >shell:ControlPanelFolder</td>
+            <td >&nbsp;</td>
+        </tr>
+        <tr>
+            <td >shell:AddNewProgramsFolder</td>
+            <td >ネットワークからプログラムをインストール</td>
+        </tr>
+        <tr>
+            <td >shell:ConnectionsFolder</td>
+            <td >&nbsp;</td>
+        </tr>
+        <tr>
+            <td >shell:PrintersFolder</td>
+            <td >&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="it">shell:AppData</td>
+            <td >&nbsp;</td>
+        </tr>
+        <tr>
+            <td >shell:Administrative Tools</td>
+            <td >ユーザーの管理ツール</td>
+        </tr>
+        <tr>
+            <td >shell:Cookies</td>
+            <td >クッキー</td>
+        </tr>
+        <tr>
+            <td >shell:NetHood</td>
+            <td >ネットワーク ショートカット</td>
+        </tr>
+        <tr>
+            <td >shell:PrintHood</td>
+            <td >プリンター ショートカット</td>
+        </tr>
+        <tr>
+            <td >shell:Programs</td>
+            <td >スタートメニューのプログラム</td>
+        </tr>
+        <tr>
+            <td >shell:Recent</td>
+            <td >最近使った項目</td>
+        </tr>
+        <tr>
+            <td >shell:SendTo</td>
+            <td >「送る」メニュー</td>
+        </tr>
+        <tr>
+            <td >shell:Start Menu</td>
+            <td >ユーザーのスタートメニュー</td>
+        </tr>
+        <tr>
+            <td  class="it">shell:Startup</td>
+            <td >ユーザーのスタートアップ</td>
+        </tr>
+        <tr>
+            <td >shell:Templates</td>
+            <td >ユーザーのテンプレート</td>
+        </tr>
+        <tr>
+            <td >shell:Quick Launch</td>
+            <td >クイック起動</td>
+        </tr>
+        <tr>
+            <td >shell:User Pinned</td>
+            <td >ジャンプリスト 固定メニュー</td>
+        </tr>
+        <tr>
+            <td  class="it">shell:Local AppData</td>
+            <td >&nbsp;</td>
+        </tr>
+        <tr>
+            <td >shell:Cache</td>
+            <td >インターネット一時ファイル</td>
+        </tr>
+        <tr>
+            <td >shell:CD Burning</td>
+            <td >CDの一時書き込みフォルダー</td>
+        </tr>
+        <tr>
+            <td >shell:History</td>
+            <td >IEの履歴</td>
+        </tr>
+        <tr>
+            <td >shell:Common AppData</td>
+            <td >&nbsp;</td>
+        </tr>
+        <tr>
+            <td >shell:Common Templates</td>
+            <td >共通のテンプレート</td>
+        </tr>
+        <tr>
+            <td >shell:Common Start Menu</td>
+            <td >共通のスタートメニュー</td>
+        </tr>
+        <tr>
+            <td  class="it">shell:Common Startup</td>
+            <td >共通のスタートアップ</td>
+        </tr>
+        <tr>
+            <td >shell:Common Programs</td>
+            <td >共通のスタートメニューのプログラム</td>
+        </tr>
+        <tr>
+            <td  class="it">shell:Common Administrative Tools</td>
+            <td >共通の管理ツール</td>
+        </tr>
+        <tr>
+            <td >shell:ProgramFiles</td>
+            <td >&nbsp;</td>
+        </tr>
+        <tr>
+            <td >shell:ProgramFilesCommon</td>
+            <td >&nbsp;</td>
+        </tr>
+        <tr>
+            <td >shell:Common Desktop</td>
+            <td >パブリックのデスクトップ</td>
+        </tr>
+        <tr>
+            <td >shell:Common Documents</td>
+            <td >パブリックのドキュメント</td>
+        </tr>
+        <tr>
+            <td >shell:CommonDownloads</td>
+            <td >パブリックのダウンロード</td>
+        </tr>
+        <tr>
+            <td >shell:CommonMusic</td>
+            <td >パブリックのミュージック</td>
+        </tr>
+        <tr>
+            <td >shell:CommonPictures</td>
+            <td >パブリックのピクチャ</td>
+        </tr>
+        <tr>
+            <td >shell:CommonVideo</td>
+            <td >パブリックのビデオ</td>
+        </tr>
+        <tr>
+            <td >shell:Libraries</td>
+            <td >ライブラリ</td>
+        </tr>
+        <tr>
+            <td >shell:UsersLibrariesFolder</td>
+            <td >ライブラリ</td>
+        </tr>
+        <tr>
+            <td >shell:DocumentsLibrary</td>
+            <td >ドキュメント</td>
+        </tr>
+        <tr>
+            <td >shell:MusicLibrary</td>
+            <td >ミュージック</td>
+        </tr>
+        <tr>
+            <td >shell:PicturesLibrary</td>
+            <td >ピクチャ</td>
+        </tr>
+        <tr>
+            <td >shell:VideosLibrary</td>
+            <td >ビデオ</td>
+        </tr>
+        <tr>
+            <td >shell:UserProfiles</td>
+            <td >&nbsp;</td>
+        </tr>
+        <tr>
+            <td >shell:Profile</td>
+            <td >ユーザーのフォルダー</td>
+        </tr>
+        <tr>
+            <td >shell:UsersFilesFolder</td>
+            <td >ユーザーのフォルダー</td>
+        </tr>
+        <tr>
+            <td >shell:Contacts</td>
+            <td >ユーザーのアドレス帳</td>
+        </tr>
+        <tr>
+            <td  class="it">shell:Downloads</td>
+            <td >ユーザーのダウンロード</td>
+        </tr>
+        <tr>
+            <td >shell:Favorites</td>
+            <td >ユーザーのIEのお気に入り</td>
+        </tr>
+        <tr>
+            <td >shell:Links</td>
+            <td >ユーザーのリンク<br>
+            （エクスプローラーのお気に入り）</td>
+        </tr>
+        <tr>
+            <td >shell:My Music</td>
+            <td >ユーザーのマイ ミュージック</td>
+        </tr>
+        <tr>
+            <td >shell:My Pictures</td>
+            <td >ユーザーのマイ ピクチャ</td>
+        </tr>
+        <tr>
+            <td >shell:My Video</td>
+            <td >ユーザーのマイ ビデオ</td>
+        </tr>
+        <tr>
+            <td >shell:Personal</td>
+            <td >ユーザーのマイ ドキュメント</td>
+        </tr>
+        <tr>
+            <td >shell:SavedGames</td>
+            <td >保存したゲーム</td>
+        </tr>
+        <tr>
+            <td >shell:Searches</td>
+            <td >ユーザーの検索</td>
+        </tr>
+        <tr>
+            <td >shell:Public</td>
+            <td >パブリックのユーザーのフォルダー</td>
+        </tr>
+        <tr>
+            <td  class="it">shell:Windows</td>
+            <td >&nbsp;</td>
+        </tr>
+        <tr>
+            <td >shell:Fonts</td>
+            <td >フォント</td>
+        </tr>
+        <tr>
+            <td >shell:ResourceDir</td>
+            <td >テーマ リソース フォルダー</td>
+        </tr>
+        <tr>
+            <td  class="it">shell:System</td>
+            <td >&nbsp;</td>
+        </tr>
+        <tr>
+            <td  class="it">shell:Desktop</td>
+            <td >デスクトップ</td>
+        </tr>
+        <tr>
+            <td >shell:HomeGroupFolder</td>
+            <td >ホームグループ</td>
+        </tr>
+        <tr>
+            <td >shell:MyComputerFolder</td>
+            <td >コンピューター</td>
+        </tr>
+        <tr>
+            <td >shell:NetworkPlacesFolder</td>
+            <td >ネットワーク</td>
+        </tr>
+        <tr>
+            <td >shell:RecycleBinFolder</td>
+            <td >ごみ箱</td>
+        </tr>
+        <tr>
+            <td >shell:SearchHomeFolder</td>
+            <td >検索結果</td>
+        </tr>
+    </tbody>
+</table></DIV>
+
+
+</body>
+</html>
+
