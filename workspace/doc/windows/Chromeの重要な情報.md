@@ -72,6 +72,7 @@
 
 ## Chrome の内部ページ一覧
 ```
+chrome://about/
 chrome://chrome-urls/
 ```
 
