@@ -8,7 +8,5 @@
 ![image](https://user-images.githubusercontent.com/1501327/145751729-2852069a-1487-4b9c-bacf-7a0a52f1ea26.png)
 
 ## ウェブサービスメニュー
-![image](https://user-images.githubusercontent.com/1501327/163663478-749f13ff-839b-4cc0-a365-93a1b82eeb7e.png)
-
-
+![image](https://user-images.githubusercontent.com/1501327/220901393-e5b6b143-8a5e-4218-b677-75488a683f13.png)
 
