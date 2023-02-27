@@ -9,10 +9,11 @@ ms-ceintl.vscode-language-pack-ja\
 
 Run Terminal Command\
 adrianwilczynski.terminal-commands\
-![image](https://user-images.githubusercontent.com/1501327/221483419-d1a233bd-0f3b-439c-a963-4b88449f866f.png)
+![image](https://user-images.githubusercontent.com/1501327/221483528-d929141b-71d4-452a-82ef-e0fd6e42946c.png)
 
 Code Runner\
-formulahendry.code-runner
+formulahendry.code-runner\
+![image](https://user-images.githubusercontent.com/1501327/221483419-d1a233bd-0f3b-439c-a963-4b88449f866f.png)
 
 ### 3) script-download.vbs を実行して以下のダイアログが出るまで待ってください
 
