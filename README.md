@@ -11,7 +11,7 @@ Run Terminal Command\
 adrianwilczynski.terminal-commands\
 ![image](https://user-images.githubusercontent.com/1501327/221483528-d929141b-71d4-452a-82ef-e0fd6e42946c.png)
 ![image](https://user-images.githubusercontent.com/1501327/221484891-6c3dbdcb-cc3c-47e2-8f20-161ac850ef42.png)\
-***"C:\Users\ユーザ名\.vscode\extensions\adrianwilczynski.terminal-commands-1.0.5\package.json" のメニューカスタマイズ***
+***"C:\Users\ユーザ名\\.vscode\extensions\adrianwilczynski.terminal-commands-1.0.5\package.json" のメニューカスタマイズ***
 ```json
 "contributes": {
 	"commands": [
