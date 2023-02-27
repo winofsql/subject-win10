@@ -21,13 +21,6 @@ adrianwilczynski.terminal-commands\
 				"title": "🟥 ターミナルコマンド"			}
 		],
 		"menus": {
-			"explorer/context": [
-				{
-					"command": "extension.runTerminalCommand",
-					"group": "navigation@6"
-				}
-			]
-		},
 ```
 
 Code Runner\
