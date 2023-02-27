@@ -27,6 +27,8 @@ Code Runner\
 formulahendry.code-runner\
 ![image](https://user-images.githubusercontent.com/1501327/221483419-d1a233bd-0f3b-439c-a963-4b88449f866f.png)
 
+### 4) C:\xampp が存在する事が前提です
+
 ### 3) script-download.vbs を実行して以下のダイアログが出るまで待ってください
 
 ![image](https://user-images.githubusercontent.com/1501327/221482687-cd64b71e-7208-4047-a1aa-7b22a1088859.png)
