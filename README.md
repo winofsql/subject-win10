@@ -13,14 +13,14 @@ adrianwilczynski.terminal-commands\
 ![image](https://user-images.githubusercontent.com/1501327/221484891-6c3dbdcb-cc3c-47e2-8f20-161ac850ef42.png)
 "C:\Users\ユーザ名\.vscode\extensions\adrianwilczynski.terminal-commands-1.0.5\package.json" のメニューカスタマイズ
 ```json
-	"contributes": {
-		"commands": [
-			{
-				"command": "extension.runTerminalCommand",
-				"-title": "Run Terminal Command...",
-				"title": "🟥 ターミナルコマンド"			}
-		],
-		"menus": {
+"contributes": {
+	"commands": [
+		{
+			"command": "extension.runTerminalCommand",
+			"-title": "Run Terminal Command...",
+			"title": "🟥 ターミナルコマンド"			}
+	],
+	"menus": {
 ```
 
 Code Runner\
