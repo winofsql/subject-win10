@@ -3,7 +3,7 @@
 #### 1) C:\app\workspace がある事を前提として、その中にダウンロードして解凍される事を想定しています
 
 #### 2) 最低限必要な拡張は
-Japanese Language Pack for VS Code\
+**Japanese Language Pack for VS Code\**
 ms-ceintl.vscode-language-pack-ja\
 ![image](https://user-images.githubusercontent.com/1501327/221483321-30de62e5-6626-4b06-80ec-84f861c81a37.png)
 
