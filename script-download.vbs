@@ -22,6 +22,7 @@ Call lightbox_download( path, "start-localhost.vbs",              "https://githu
 Call lightbox_download( path, "folder-vscode-settings-setup.vbs", "https://github.com/winofsql/vscode-template/raw/main/folder-vscode-settings-setup.vbs" )
 Call lightbox_download( path, "build-tomcat-path.vbs",            "https://github.com/winofsql/vscode-template/raw/main/script/build-tomcat-path.vbs" )
 Call lightbox_download( path, "git-clone.vbs",                    "https://github.com/winofsql/vscode-template/raw/main/script/git-clone.vbs" )
+Call lightbox_download( path, "gtod.vbs",                    "https://github.com/winofsql/vscode-template/raw/main/script/gtod.vbs" )
 
 Call lightbox_download( path, "start-root-localhost.vbs",         "https://github.com/winofsql/vscode-template/raw/main/script/start-root-localhost.vbs" )
 Call lightbox_download( path, "setup-vscode-user.vbs",            "https://github.com/winofsql/subject/raw/main/zz-workspace/download/setup-vscode-user.vbs" )
