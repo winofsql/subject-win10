@@ -1,3 +1,4 @@
+MsgBox("処理を開始します。実行後、メッセージボックスが表示されるまでしばらくお待ちください。")
 Set fso = Wscript.CreateObject("Scripting.FileSystemObject")
 Set WshShell = WScript.CreateObject("WScript.Shell")
 path_base = WshShell.ExpandEnvironmentStrings("%APPDATA%") & "\Code\User"
