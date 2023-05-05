@@ -8,7 +8,11 @@ strCurPath = obj.Path
 ' Create a new instance of Chrome
 Set chrome = CreateObject("WScript.Shell")
 'chrome.Run """C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"" --no-first-run --no-default-browser-check --disable-background-networking --disable-sync --disable-default-apps --disable-translate --disable-popup-blocking --disable-extensions --disable-infobars"
-chrome.Run """C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"""
+if Fso.FileExists("C:\Program Files (x86)\Google\Chrome\Application\chrome.exe") then
+    chrome.Run """C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"""
+else
+    chrome.Run """C:\Program Files\Google\Chrome\Application\chrome.exe"""
+end if
 
 ' Wait for Chrome to open
 WScript.Sleep 1000
