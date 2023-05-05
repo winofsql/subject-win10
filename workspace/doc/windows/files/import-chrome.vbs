@@ -1,14 +1,20 @@
-' VBScript program to import bookmarks into Google Chrome from an HTML file
+Set Fso = CreateObject( "Scripting.FileSystemObject" )
+
+strCurPath = WScript.ScriptFullName
+Set obj = Fso.GetFile( strCurPath )
+Set obj = obj.ParentFolder
+strCurPath = obj.Path
 
 ' Create a new instance of Chrome
 Set chrome = CreateObject("WScript.Shell")
-chrome.Run """C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"" --no-first-run --no-default-browser-check --disable-background-networking --disable-sync --disable-default-apps --disable-translate --disable-popup-blocking --disable-extensions --disable-infobars"
+'chrome.Run """C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"" --no-first-run --no-default-browser-check --disable-background-networking --disable-sync --disable-default-apps --disable-translate --disable-popup-blocking --disable-extensions --disable-infobars"
+chrome.Run """C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"""
 
 ' Wait for Chrome to open
 WScript.Sleep 1000
 
 ' Set the path to the bookmarks HTML file
-bookmarksPath = "C:\Users\sworc\Downloads\subject-main\workspace\doc\windows\files\bookmarks.html"
+bookmarksPath = strCurPath & "\" & "bookmarks.html"
 
 ' Create a new tab and navigate to the bookmarks manager
 chrome.SendKeys "^t"
