@@ -27,7 +27,7 @@ Call lightbox_download( path, "gitd.vbs",                         "https://githu
 Call lightbox_download( path, "php-folder.vbs",                   "https://github.com/winofsql/vscode-template/raw/main/script/php-folder.vbs" )
 
 Call lightbox_download( path, "start-root-localhost.vbs",         "https://github.com/winofsql/vscode-template/raw/main/script/start-root-localhost.vbs" )
-Call lightbox_download( path, "setup-vscode-user.vbs",            "https://github.com/winofsql/subject/raw/main/zz-workspace/download/setup-vscode-user.vbs" )
+Call lightbox_download( path, "setup-vscode-user.vbs",            "https://github.com/winofsql/subject-2022/raw/main/zz-workspace/download/setup-vscode-user.vbs" )
 
 Call lightbox_download( path_bat, "cs-startup.bat", "https://github.com/winofsql/vscode-template/raw/main/bat/cs-startup.bat" )
 Call lightbox_download( path_bat, "cs-subject2.bat", "https://github.com/winofsql/vscode-template/raw/main/bat/cs-subject2.bat" )
