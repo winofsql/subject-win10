@@ -1,0 +1,8 @@
+rmdir /S /Q "C:\Users\%USERNAME%\AppData\Roaming\Code\Cache"
+rmdir /S /Q "C:\Users\%USERNAME%\AppData\Roaming\Code\CachedConfigurations"
+rmdir /S /Q "C:\Users\%USERNAME%\AppData\Roaming\Code\CachedData"
+rmdir /S /Q "C:\Users\%USERNAME%\AppData\Roaming\Code\CachedProfilesData"
+rmdir /S /Q "C:\Users\%USERNAME%\AppData\Roaming\Code\Code Cache"
+rmdir /S /Q "C:\Users\%USERNAME%\AppData\Roaming\Code\DawnCache"
+rmdir /S /Q "C:\Users\%USERNAME%\AppData\Roaming\Code\GPUCache"
+rmdir /S /Q "C:\Users\%USERNAME%\AppData\Roaming\Code\User\workspaceStorage"
