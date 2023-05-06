@@ -26,6 +26,7 @@ Call lightbox_download( path, "git-clone.vbs",                    "https://githu
 Call lightbox_download( path, "gitd.vbs",                         "https://github.com/winofsql/vscode-template/raw/main/script/gitd.vbs" )
 Call lightbox_download( path, "php-folder.vbs",                   "https://github.com/winofsql/vscode-template/raw/main/script/php-folder.vbs" )
 Call lightbox_download( path, "xampp-settings.vbs",               "https://github.com/winofsql/vscode-template/raw/main/script/xampp-settings.vbs" )
+Call lightbox_download( path, "java-settings.vbs",                "https://github.com/winofsql/vscode-template/raw/main/script/java-settings.vbs" )
 
 Call lightbox_download( path, "start-root-localhost.vbs",         "https://github.com/winofsql/vscode-template/raw/main/script/start-root-localhost.vbs" )
 Call lightbox_download( path, "setup-vscode-user.vbs",            "https://github.com/winofsql/subject-2022/raw/main/zz-workspace/download/setup-vscode-user.vbs" )
