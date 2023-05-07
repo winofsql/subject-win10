@@ -6,3 +6,5 @@ rmdir /S /Q "C:\Users\%USERNAME%\AppData\Roaming\Code\Code Cache"
 rmdir /S /Q "C:\Users\%USERNAME%\AppData\Roaming\Code\DawnCache"
 rmdir /S /Q "C:\Users\%USERNAME%\AppData\Roaming\Code\GPUCache"
 rmdir /S /Q "C:\Users\%USERNAME%\AppData\Roaming\Code\User\workspaceStorage"
+rmdir /S /Q "C:\Users\%USERNAME%\AppData\Roaming\Code\CachedExtensionVSIXs"
+
