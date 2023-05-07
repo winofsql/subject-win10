@@ -1,6 +1,6 @@
 # 言語ドキュメント
 
-- ### 📕 C#
+- ### 📕 [C#](https://github.com/winofsql/link-base-pg-language/blob/main/document.md#-c)
   - [C#入門 ( とほほ )](https://www.tohoho-web.com/ex/c-sharp.html)
     - [📘 GitHub : cs-basic](https://github.com/winofsql/subject-1021-java-csharp-basic/blob/main/Program.cs)
   - #### [Microsoft C# API](https://learn.microsoft.com/ja-jp/dotnet/api/?view=net-6.0)
