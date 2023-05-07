@@ -17,11 +17,6 @@
 | CTRL + T | 新しいタブ
 
 
-## Google Chrome 翻訳連携
-
-![image](https://user-images.githubusercontent.com/1501327/145754996-a2ab9ee0-dbcb-4267-ab35-30870e5af3c5.png)\
-![image](https://user-images.githubusercontent.com/1501327/145755169-31f0f597-4be2-4106-8e5e-f1dfb26f00f5.png)
-
 ## 無条件に日本語に翻訳する
 **右クリックメニュー**\
 ![image](https://user-images.githubusercontent.com/1501327/145757063-f9ad3b21-d271-4a3e-822e-3fd151a5cdbd.png)
