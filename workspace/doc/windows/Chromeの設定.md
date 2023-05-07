@@ -1,19 +1,4 @@
-## Google Chrome の設定
-  - セキュリティ設定( chrome.reg )
-```reg
-Windows Registry Editor Version 5.00
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Google\Chrome]
-"ShowHomeButton"=dword:00000001
-"PasswordManagerEnabled"=dword:00000000
-"AutofillCreditCardEnabled"=dword:00000000
-"AutofillAddressEnabled"=dword:00000000
-```
-
-### 上記レジストリを開く処理
-```bat
-wscript open_reg.vbs HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Google\Chrome
-```
+## [Google Chrome の設定](https://github.com/winofsql/policies-chrome)
 
 ### ブラウザを終了時にログアウトさせるサービスのドメインを登録する
 ![image](https://user-images.githubusercontent.com/1501327/163702374-adf4fe74-61cf-433d-a8d1-31952dcf8e8b.png)\
