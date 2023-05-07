@@ -23,12 +23,6 @@ javascript:(function(){var b=((window.getSelection&&window.getSelection())||(doc
 javascript:(function(){var b=((window.getSelection&&window.getSelection())||(document.getSelection&&document.getSelection())||(document.selection&&document.selection.createRange&&document.selection.createRange().text));if(b!=''){window.open('https://translate.google.co.jp/?hl=ja&tab=wT#ja/en/'+encodeURIComponent(b));}else{window.open('https://translate.google.co.jp/translate?sl=ja&tl=en&js=n&prev=_t&hl=ja&ie=UTF-8&u='+encodeURIComponent(location.href)+'&act=url');}})();
 ```
 
-## Yahoo! 番組( 当日 )
-```
-javascript:var d=new Date();d=(new Date(d.getFullYear(),d.getMonth(),d.getDate(),00,00).getTime())/1000;window.location='https://tv.yahoo.co.jp/listings?a=40&d=%27+d;void(0);
-```
-
-
 ## ドメイン内検索
 ```
 javascript:var wnd=document.createElement('iframe');wnd.setAttribute('id','if');wnd.frameBorder=0;document.body.appendChild(wnd);wnd.contentWindow.document.write('<script src=\'https://winofsql.jp/gds2.js\' charset=\'shift_jis\'></script>')
