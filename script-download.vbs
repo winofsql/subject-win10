@@ -40,14 +40,15 @@ Call lightbox_download( path_bat, "cs-subject3.bat", "https://github.com/winofsq
 Call lightbox_download( path_bat, "settings.bat", "https://github.com/winofsql/vscode-template/raw/main/bat/settings.bat" )
 
 ActionPath = "C:\Users\%USERNAME%\AppData\Roaming\Code\User\bat\settings.bat"
-WshShell.Run(ActionPath)
+Call WshShell.Run(ActionPath, 0, True)
 Wscript.Echo "現在の settings.json を保存しました"
 
 Call lightbox_download( path_base, "settings.json", "https://github.com/winofsql/vscode-template/raw/main/settings.json" )
 Wscript.Echo "最新の settings.json をダウンロードしました"
 
-ActionPath = "cscript C:\Users\%USERNAME%\AppData\Roaming\Code\User\script\sworc-settings-download.vbs, 0, True"
-WshShell.Run(ActionPath)
+Wscript.Echo "keybindings.json と、ユーザスニペットと、my.bat をダウンロードしています....."
+ActionPath = "cscript C:\Users\%USERNAME%\AppData\Roaming\Code\User\script\sworc-settings-download.vbs"
+Call WshShell.Run(ActionPath, 0, True)
 
 MsgBox( "ユーザ設定のキーボードショートカットと、ユーザ設定のスニペットと、MySQL コマンドプロンプトをダウンロードしました" )
 
