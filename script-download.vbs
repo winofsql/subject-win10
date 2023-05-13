@@ -1,4 +1,7 @@
+Crun()
+
 MsgBox("処理を開始します。実行後、メッセージボックスが表示されるまでしばらくお待ちください。")
+
 Set fso = Wscript.CreateObject("Scripting.FileSystemObject")
 Set WshShell = WScript.CreateObject("WScript.Shell")
 path_base = WshShell.ExpandEnvironmentStrings("%APPDATA%") & "\Code\User"
@@ -38,12 +41,15 @@ Call lightbox_download( path_bat, "settings.bat", "https://github.com/winofsql/v
 
 ActionPath = "C:\Users\%USERNAME%\AppData\Roaming\Code\User\bat\settings.bat"
 WshShell.Run(ActionPath)
+Wscript.Echo "現在の settings.json を保存しました"
 
 Call lightbox_download( path_base, "settings.json", "https://github.com/winofsql/vscode-template/raw/main/settings.json" )
+Wscript.Echo "最新の settings.json をダウンロードしました"
 
-ActionPath = "C:\Users\%USERNAME%\AppData\Roaming\Code\User\script\sworc-settings-download.vbs"
+ActionPath = "cscript C:\Users\%USERNAME%\AppData\Roaming\Code\User\script\sworc-settings-download.vbs, 0, True"
 WshShell.Run(ActionPath)
 
+MsgBox( "ユーザ設定のキーボードショートカットと、ユーザ設定のスニペットと、MySQL コマンドプロンプトをダウンロードしました" )
 
 Function lightbox_download( target_path, file_name, url )
 
@@ -54,5 +60,53 @@ Function lightbox_download( target_path, file_name, url )
     Stream.Write objSrvHTTP.responseBody
     Stream.SaveToFile target_path & "\" & file_name, 2
     Stream.Close
+    
+    Wscript.Echo file_name & " をダウンロードしました"
 
 End Function
+
+' **********************************************************
+' Cscript.exe で実行を強制
+' Cscript.exe の実行終了後 pause で一時停止
+' **********************************************************
+Function Crun( )
+
+	Dim str,WshShell
+
+	' 実行中の WSH のフルパス
+	str = WScript.FullName
+	' 右から11文字取得
+	str = Right( str, 11 )
+	' 全て大文字に変更
+	str = Ucase( str )
+	' CSCRIPT.EXE でなければ処理を行う
+	if str <> "CSCRIPT.EXE" then
+		' 実行中の自分自身(スクリプト)のフルパスを取得
+		str = WScript.ScriptFullName
+
+		Set WshShell = CreateObject( "WScript.Shell" )
+
+		' 実行中の自分自身(スクリプト)への引数を引き継ぐ為の文字列を作成
+		strParam = " "
+		For I = 0 to Wscript.Arguments.Count - 1
+			if instr(Wscript.Arguments(I), " ") < 1 then
+				strParam = strParam & Wscript.Arguments(I) & " "
+			else
+				strParam = strParam & Dd(Wscript.Arguments(I)) & " "
+			end if
+		Next
+		' cscript.exe で実行しなおす為のコマンドラインを実行
+		Call WshShell.Run( "cmd.exe /c cscript.exe " & Dd(str) & strParam, 1 )
+		' 実行中の自分自身(スクリプト)を終了
+		WScript.Quit
+	end if
+
+End Function
+' **********************************************************
+' 文字列を " で囲む関数
+' **********************************************************
+Function Dd( strValue )
+
+	Dd = """" & strValue & """"
+
+End function
