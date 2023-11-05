@@ -1,6 +1,19 @@
 REM vscode > F1 > Configure Display Language
 echo vscode > F1 > Configure Display Language
 
-code --install-extension ms-ceintl.vscode-language-pack-ja & code --install-extension adrianwilczynski.terminal-commands & code --install-extension formulahendry.code-runner & code --install-extension ms-dotnettools.csharp & code --install-extension fudge.auto-using & code --install-extension phu1237.vs-browser & code --install-extension tomoki1207.pdf & code --install-extension arcanis.vscode-zipfs  & code --install-extension phu1237.vs-browser & code --install-extension janisdd.vscode-edit-csv & code --install-extension grapecity.gc-excelviewer & code --install-extension vscjava.vscode-java-pack & code --install-extension ms-vscode.hexeditor & code --install-extension cweijan.vscode-mysql-client2 & code --install-extension pkief.material-icon-theme & code --install-extension adpyke.vscode-sql-formatter & code --install-extension serpen.vbsvscode
-
-
+cmd /c code --install-extension ms-ceintl.vscode-language-pack-ja  --force
+cmd /c code --install-extension adrianwilczynski.terminal-commands --force
+cmd /c code --install-extension formulahendry.code-runner --force
+cmd /c code --install-extension ms-dotnettools.csharp --force
+cmd /c code --install-extension fudge.auto-using --force
+cmd /c code --install-extension phu1237.vs-browser --force
+cmd /c code --install-extension tomoki1207.pdf --force
+cmd /c code --install-extension arcanis.vscode-zipfs  --force
+cmd /c code --install-extension janisdd.vscode-edit-csv --force
+cmd /c code --install-extension grapecity.gc-excelviewer --force
+cmd /c code --install-extension vscjava.vscode-java-pack --force
+cmd /c code --install-extension ms-vscode.hexeditor --force
+cmd /c code --install-extension cweijan.vscode-mysql-client2 --force
+cmd /c code --install-extension pkief.material-icon-theme --force
+cmd /c code --install-extension adpyke.vscode-sql-formatter --force
+cmd /c code --install-extension serpen.vbsvscode --force
