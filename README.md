@@ -1,4 +1,4 @@
-# subject
+# subject-win10
 
 #### 1) C:\app\workspace がある事を前提として、その中にダウンロードして解凍される事を想定しています
 
